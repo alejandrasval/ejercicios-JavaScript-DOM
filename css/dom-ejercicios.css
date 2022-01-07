@@ -1,5 +1,5 @@
 :root {
-  --main-font: sans-serif;
+  --main-font: 'Be Vietnam Pro', sans-serif;
   --font-size: 16px;
   --main-color: #f7df1e;
   --second-color: #222;
@@ -109,4 +109,32 @@ img {
 .menu a:hover {
   color: var(--second-color);
   background-color: var(--main-modal-color);
+}
+
+/* Reloj */
+
+.btn-reloj {
+  margin: 20px;
+  background-color: var(--main-color);
+  font-style: ;
+  border: none;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Teclado */
+
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: var(--second-color);
+}
+
+.ball {
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
 }
