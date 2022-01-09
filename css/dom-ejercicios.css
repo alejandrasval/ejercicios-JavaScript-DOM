@@ -199,3 +199,11 @@ img {
   background-color: var(--second-color);
   color: var(--main-color);
 }
+
+/* Objeto responsive */
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}

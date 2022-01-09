@@ -7,8 +7,6 @@ export function moveBall(e, ball, stage) {
   const limitsBall = $ball.getBoundingClientRect();
   const limitsStage = $stage.getBoundingClientRect();
 
-  console.log(e.keyCode);
-
   const move = (direction) => {};
 
   switch (e.keyCode) {
@@ -37,14 +35,4 @@ export function moveBall(e, ball, stage) {
       break;
   }
   $ball.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
-}
-
-export function shortcuts(e) {
-  console.log(e.type);
-  console.log(e.key);
-  console.log(e.keyCode);
-  console.log(`ctrl: ${e.ctrlKey}`);
-  console.log(`alt: ${e.altKey}`);
-  console.log(`shift: ${e.shiftKey}`);
-  console.log(e);
 }
