@@ -10,6 +10,8 @@ import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
 import webcamStatus from "./deteccion_webcam.js";
 import getGeolocation from "./geolocation.js";
+import searchFilter from "./filtro_busqueda.js";
+import giveaway from "./sorteo_digital.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -32,7 +34,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
   webcamStatus("webcam");
-  getGeolocation("geolocation")
+  getGeolocation("geolocation");
+  searchFilter(".card-filter", ".card");
+  giveaway("#winner-btn", ".player");
 });
 
 // document.addEventListener("keydown", (e) => {
