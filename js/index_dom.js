@@ -12,6 +12,7 @@ import webcamStatus from "./deteccion_webcam.js";
 import getGeolocation from "./geolocation.js";
 import searchFilter from "./filtro_busqueda.js";
 import giveaway from "./sorteo_digital.js";
+import slider from "./slider.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   getGeolocation("geolocation");
   searchFilter(".card-filter", ".card");
   giveaway("#winner-btn", ".player");
+  slider()
 });
 
 // document.addEventListener("keydown", (e) => {

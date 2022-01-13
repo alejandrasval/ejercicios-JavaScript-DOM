@@ -34,6 +34,7 @@ img {
 
 .header {
   position: sticky;
+  z-index: 997;
   top: 0;
   padding: 1rem;
   background-color: var(--main-color);
@@ -281,4 +282,62 @@ a {
   list-style: none;
   margin: 16px 0;
   padding: 0;
+}
+
+/* Slider */
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.slider-slides {
+  position: relative;
+  height: 400px;
+}
+
+.slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.slider.slide img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.slider-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-btns {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slider a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s ease;
+}
+
+.slider a:hover {
+  opacity: 0.5;
 }
